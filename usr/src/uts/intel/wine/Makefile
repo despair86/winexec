@@ -19,14 +19,14 @@
 # CDDL HEADER END
 #
 #
-# uts/intel/foo/Makefile
+# uts/intel/wine/Makefile
 #
 # Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 # Copyright 2011 Nexenta Systems, Inc.  All rights reserved.
 #
-#	This makefile drives the production of the foo `drv'
+#	This makefile drives the production of the wine `exec'
 #	kernel module.
 #
 #	intel implementation architecture dependent
@@ -40,11 +40,11 @@ UTSBASE	= ../..
 #
 #	Define the module and object file sets.
 #
-MODULE		= foo
-OBJECTS		= $(FOO_OBJS:%=$(OBJS_DIR)/%)
-LINTS		= $(FOO_OBJS:%.o=$(LINTS_DIR)/%.ln)
+MODULE		= wine
+OBJECTS		= $(WINE_OBJS:%=$(OBJS_DIR)/%)
+LINTS		= $(WINE_OBJS:%.o=$(LINTS_DIR)/%.ln)
 ROOTMODULE	= $(ROOT_DRV_DIR)/$(MODULE)
-CONF_SRCDIR	= $(UTSBASE)/common/io/foo
+CONF_SRCDIR	= $(UTSBASE)/common/exec/wine
 
 #
 #	Include common rules.

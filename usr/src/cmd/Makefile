@@ -32,7 +32,6 @@ include ../Makefile.master
 FIRST_SUBDIRS=
 
 COMMON_SUBDIRS=		\
-	foo \
 	fs.d \
 	mdb
 
@@ -45,7 +44,6 @@ sparc_SUBDIRS=
 # (see previous comment about 'lp' and 'man').
 #
 MSGSUBDIRS=		\
-	foo
 
 sparc_MSGSUBDIRS=
 
